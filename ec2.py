@@ -23,7 +23,7 @@ ec2.create_tags(
     Tags=[{'Key':'Name', 'Value':'RHEL-Linux-Machine'}]
 )
 
-time.sleep(20) # Sleep
+time.sleep(30) # Sleep
 
 # Terminate the instance
 response = ec2.terminate_instances(InstanceIds=[instance_id])
